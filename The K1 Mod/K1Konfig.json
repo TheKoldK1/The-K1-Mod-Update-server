@@ -18,7 +18,7 @@
             
            
             {
-               "Name": "IncludeDir1",
+               "Name": "IncludeDir3",
                "DisplayName": "Unleashed Model",
                "Description": [
                   "Choose between unleashed models",
@@ -26,10 +26,10 @@
                "Type": "ModelEnum",
                "MinValue": null,
                "MaxValue": null,
-               "DefaultValue": "core_su_model"
+               "DefaultValue": "core_dummy"
             },
             {
-               "Name": "IncludeDir2",
+               "Name": "IncludeDir4",
                "DisplayName": "Physics Type",
                "Description": [
                   "Choose between the physics to control Sonic",
@@ -40,7 +40,7 @@
                "DefaultValue": "core_dummy"
             },
 			{
-               "Name": "IncludeDir5",
+               "Name": "IncludeDir7",
                "DisplayName": "Camera Type",
                "Description": [
                   "Choose between Cameras For Modern Sonic",
@@ -57,7 +57,29 @@
          "DisplayName": "Extra Options",
          "Elements": [					
             {
-               "Name": "IncludeDir3",
+               "Name": "IncludeDir1",
+               "DisplayName": "Accessories",
+               "Description": [
+                  "Choose to add a certain Chihuahua's Bracelet onto Sonic",
+               ],
+               "Type": "ChipEnum",
+               "MinValue": null,
+               "MaxValue": null,
+               "DefaultValue": "core_dummy"
+            },
+			{
+               "Name": "IncludeDir2",
+               "DisplayName": "Jumpball Type",
+               "Description": [
+                  "Choose between the Jumpball from the Retail version or the Beta version of SU",
+               ],
+               "Type": "JumpEnum",
+               "MinValue": null,
+               "MaxValue": null,
+               "DefaultValue": "core_dummy"
+            },
+			{
+               "Name": "IncludeDir5",
                "DisplayName": "Debug Boot Type",
                "Description": [
                   "Choose Debug Boot Mode for vanilla gens or the Unleashed Project,(Not recomended using vanilla gens debug boot when playing the game with stage mods)",
@@ -68,7 +90,7 @@
                "DefaultValue": "core_debug"
             },
             {
-               "Name": "IncludeDir4",
+               "Name": "IncludeDir6",
                "DisplayName": "Unleashed Background Music",
                "Description": [
                   "Enable Sonic Unleashed music on the Title Screen, Options Menu, Collection Room, Shop & Results Screen",
@@ -85,7 +107,7 @@
       "VoiceEnum": [
          {
             "DisplayName": "English",
-            "Value": "core_eng",
+            "Value": "core_dummy",
             "Description": [
                "Use English Voice Over",
             ]
@@ -102,30 +124,9 @@
       "ModelEnum": [
          {
             "DisplayName": "Retail Model",
-            "Value": "core_su_model",
+            "Value": "core_dummy",
             "Description": [
                "Uses the unleashed model from the retail game",
-            ]
-         },
-         {
-            "DisplayName": "Retail Model with Chip Bracelet",
-            "Value": "core_su_model_chip",
-            "Description": [
-               "Adds the chip bracelet to the retail model",
-            ]
-         },
-		 {
-            "DisplayName": "Preview Model",
-            "Value": "core_su_beta_model",
-            "Description": [
-               "Uses the unleashed model from the preview build",
-            ]
-         },
-		 {
-            "DisplayName": "Preview Model with Chip Bracelet",
-            "Value": "core_su_beta_model_chip",
-            "Description": [
-               "Adds the chip bracelet to the preview model",
             ]
          }, 
 		 {
@@ -139,7 +140,39 @@
             "DisplayName": "Marza Model with Chip Bracelet",
             "Value": "core_su_marza_chip",
             "Description": [
-               "Adds the chip bracelet to the marza unleashed model",
+               "Adds the chip bracelet to the marza unleashed model (If you enable this, you can turn change the 'Accessories' option to show 'No Bracelet') ",
+            ]
+         },
+      ],
+	  "ChipEnum": [
+         {
+            "DisplayName": "Chip's Bracelet",
+            "Value": "core_chip",
+            "Description": [
+               "Enable Chip's Bracelet",
+            ]
+         }, 
+		 {
+            "DisplayName": "No Bracelet",
+            "Value": "core_dummy",
+            "Description": [
+               "Disable Chip's Bracelet",
+            ]
+         },
+      ],
+	  "JumpEnum": [
+         {
+            "DisplayName": "Retail Jumpball",
+            "Value": "core_dummy",
+            "Description": [
+               "Use the jumpball from the retail game",
+            ]
+         }, 
+		 {
+            "DisplayName": "Beta Jumpball",
+            "Value": "core_beta_jump",
+            "Description": [
+               "Use the jumpball from the beta version",
             ]
          },
       ],
